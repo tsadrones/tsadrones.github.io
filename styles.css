@@ -1,3 +1,290 @@
-body {
+body { 
+  margin: 0; 
+}
 
+/*header CSS*/
+.header {
+  background: url("images/cool map bg.jpg");
+  background-size:contain;
+}
+.nav-bar {
+  border: none;
+  text-align: center;
+  background: rgba(225,225,225,0.3);
+}
+.nav-bar li {
+  color: rgb(255,255,255);
+  display: inline-block;
+  font-family: Lucida Grande;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  border-right: 2px solid #fff;
+}
+.nav-bar li:first-child {
+  border-left: 2px solid #fff;
+}
+.nav-bar li a {
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+.nav-bar ul {
+  margin: 0 auto;
+}
+#nav-tsa:hover {
+  background: white;
+}
+#nav-home:hover {
+  background: white;
+  border-left,right: 2px solid white;
+  color: #08298A;
+}
+#nav-des:hover {
+  background: white;
+  border-left,right: 2px solid white;
+  color: #08298A;
+}
+
+/*Title Font*/
+@font-face {
+  font-family: 'Londrina Shadow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Londrina Shadow'), local('LondrinaShadow-Regular'), url(https://fonts.gstatic.com/s/londrinashadow/v4/dNYuzPS_7eYgXFJBzMoKdcPuLrAUgJsyas9aUtTQArI.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Metamorphous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Metamorphous'), url(http://fonts.gstatic.com/s/metamorphous/v6/wGqUKXRinIYggz-BTRU9epS3E-kSBmtLoNJPDtbj2Pk.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Coda';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Coda'), local('Coda-Regular'), url(http://fonts.gstatic.com/s/coda/v10/KfdcISySrhNbw8aE3x0EvfesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+}
+/*end of title fint*/
+.intro h1 {
+  font-weight: 500;
+  color: rgba(200,220,220,1);
+  text-align: center;
+  font-size: 6em;
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  text-shadow:0.05em 0.05em rgba(225,225,225,0.6);
+  font-family: 'Coda','Metamorphous','Londrina Shadow', Arial, Verdana;
+  -webkit-font-smoothing: antialiased;
+}
+.button {
+  display: inline-block;
+}
+.intro p {
+  font-weight: 350;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2.5em;
+  font-family: Lato , Helvetica , sans-serif;
+  font-size: 2em;
+  color: rgba(200,200,200,1);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+  
+}
+
+
+/*Jumbotron CSS*/
+.CAD {
+  background: rgba(255,255,255, 0.6);
+  border: 8px outset rgb(203,237,265);
+}
+.CAD:hover {
+  background: white;
+}
+
+.types {
+  background: rgba(255,255,255, 0.6);
+  border: 8px outset rgb(203,237,265);
+}
+.types:hover {
+  background: white;
+}
+
+.applications {
+  background: rgba(255,255,255, 0.6);
+  border: 8px outset rgb(203,237,265);
+}
+.applications:hover {
+  background: white;
+}
+
+.jumbotron {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+
+.jumbotron div {
+  display: inline-block;
+  height: 18em;
+  width: 20em;
+  margin: 1em;
+  border-radius:25px;
+  text-align: center;
+}
+.jumbotron {
+  margin-bottom: 3em;
+}
+
+.intro .jumbotron .button h2{
+  font-family: Open Sans, sans-serif;
+  color: rgba(90,120,170,1);
+  text-shadow:0.04em 0.05em rgba(0,0,0,0.5);
+  font-weight: 400;
+  font-size: 2em;
+  text-align: left;
+}
+.intro .jumbotron .button img {
+  background: rgba(225,225,225,0);
+  border-radius: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*Content CSS*/
+
+.content {
+  background: #fff;
+}
+.content article {
+  max-width: 700px;
+  padding-top: 5em;
+  margin: 0 auto;
+}
+.content article img {
+  margin-bottom: 2.5em;
+  max-width: none;
+  margin: 0 auto;
+}
+.content p {
+  font-weight: 300;
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: Lato , Helvetica , sans-serif;
+  font-size: 1.2em;
+  color: rgba(70,70,70,1);
+}
+.content li {
+  font-weight: 300;
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: Lato , Helvetica , sans-serif;
+  font-size: 1.2em;
+  color: rgba(70,70,70,1);
+}
+.placeholder {
+  text-align:center;
+}
+.placeholder .arrow-down img {
+  height: 3.6em;
+  width: 4em;
+  position: relative;
+  bottom: -2em;
+  text-align:center;
+}
+.content .explain {
+  text-align: left;
+}
+.content img {
+  display: block;
+  margin: auto;
+}
+.content .button p {
+  font-family: Open Sans, sans-serif;
+  color: #10a2b8;
+  font-weight: 300;
+  font-size: 2em;
+}
+.content .button {
+  heght: 6em;
+  width: 12em;
+  border: 0.1em solid #10a2b8;
+  border-radius: 1em;
+  margin-bottom: 1.5em;
+}
+hr {
+  margin: 5em auto;
+  display: block;
+  color: #455a64;
+  line-height: 1.8;
+  max-width: 600px;
+}
+.content h2 {
+  text-align: center;
+}
+.content .buttonz button {
+  display: inline;
+  margin: 1em;
+}
+.content .buttonz{
+  margin left: auto;
+  margin right: auto;
+}
+.content h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 500;
+  font-family: Garamond;
+  color: rgb(100,100,100);
+}
+.content a img {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 2em;
+  height: 5em;
+}
+.quote2 {
+  margin-bottom: 5em;
+}
+.content span {
+  font-size: 0.9em;
+  color: rgba(100,100,100,1);
+}
+footer {
+  margin: 0;
+  background: rgb(130,140,150);
+  text-align: center;
+  padding: 1em;
+  border-radius: 0px 0px 1.5em 1.5em;
+  border: 0.2em solid rgb(150,160,170)
+}
+footer p {
+  line-height: 1.3em;
+  color: #FFFFFF;
+  font-family: garamond;
+  text-weight: 300;
+}
+.content button {
+  color: white;
+  border-radius: 5px;
+}
+.content button:first-child {
+  margin-right: 5em;
+}
+.blue {
+  background: blue;
+}
+.red {
+  background: red;
+}
+.yesno {
+  text-align: center;
+  margin: 0 auto;
 }
