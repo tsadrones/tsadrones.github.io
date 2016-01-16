@@ -4,44 +4,24 @@ body {
 
 /*header CSS*/
 .header {
-  background: url("images/cool map bg.jpg");
+  background: white;
   background-size:contain;
 }
 .nav-bar {
-  border: none;
+  border-bottom: rgb(0,0,0,0.3);
   text-align: center;
   background: rgba(225,225,225,0.3);
 }
-.nav-bar li {
-  color: rgb(255,255,255);
-  display: inline-block;
-  font-family: Lucida Grande;
-  font-size: 1.5em;
-  padding: 10px 30px;
-  border-right: 2px solid #fff;
-}
-.nav-bar li:first-child {
-  border-left: 2px solid #fff;
-}
-.nav-bar li a {
-  text-decoration: none;
-  color: rgb(255,255,255);
-}
-.nav-bar ul {
-  margin: 0 auto;
-}
-#nav-tsa:hover {
-  background: white;
-}
-#nav-home:hover {
-  background: white;
-  border-left,right: 2px solid white;
-  color: #08298A;
-}
-#nav-des:hover {
-  background: white;
-  border-left,right: 2px solid white;
-  color: #08298A;
+.nav-bar h1 {
+  font-weight: 500;
+  color: rgba(225,225,225,1);
+  text-align: center;
+  font-size: 4em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  text-shadow:0.05em 0.05em rgba(150,150,150,1);
+  font-family: 'Coda','Metamorphous','Londrina Shadow', Arial, Verdana;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*Title Font*/
